@@ -5,26 +5,7 @@
   text-align: center;
 }
 /* Galeria con hover de aumento */
-section{
-  display: flex;
-  width: 600px;
-  height: 430px;
-}
- 
-section img {
-  width: 0px;
-  flex-grow: 1;
-  object-fit: cover;
-  opacity: .8;
-  transition: 3s ease;
-}
 
-section img:hover {
-  cursor: crosshair;
-  width: 300px;
-  opacity: 1;
-  filter: contrast(120%);
-}
 
 /* imagenes 3d */
 article {
@@ -40,6 +21,7 @@ box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
 border-radius: 4px;
 object-fit: cover;
 width: 100%;
+
 }
 
 article img:last-child{
@@ -59,6 +41,7 @@ article:hover{
   rotateX(10deg)
   translateY(-5%)
   translateZ(0);
+
 }
 
 article::before{
@@ -67,11 +50,11 @@ article::before{
   bottom: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(
+  background-image:linear-gradient(
     to bottom,
     transparent 10%,
-    rgba (0,0,0,0.5) 50%,
-    rgba (0,0,0) 95%
+    rgba(0,0,0,0.5) 50%,
+    rgba(0,0,0) 95%
   );
   opacity: 0;
   transition: all .3s ease;
